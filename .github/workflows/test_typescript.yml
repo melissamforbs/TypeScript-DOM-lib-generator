@@ -1,4 +1,6 @@
 name: Runs with TypeScript Tests
+permissions:
+  contents: read
 on:
   push:
     paths:
@@ -6,7 +8,6 @@ on:
   pull_request:
     paths:
       - "baselines/*"
-
 
 jobs:
   test:
