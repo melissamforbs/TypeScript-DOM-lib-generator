@@ -49,3 +49,10 @@ jobs:
           push-to-fork: typescript-bot/TypeScript-DOM-lib-generator
           branch: update-core-deps
           token: ${{ secrets.TS_GITHUB_BOT_AUTH }}
+[
+- name: Create Pull Request
+  uses: peter-evans/create-pull-request@v7
+  with:
+    token: ${{ secrets.GITHUB_TOKEN }}
+    
+    # other required inputs...
